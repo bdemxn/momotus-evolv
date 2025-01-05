@@ -5,15 +5,15 @@ import { validationItem } from "../services/validationItem";
 const useItemForm = () => {
   const formik = useFormik({
     initialValues: {
-      itemName: '',
-      category: '',
-      currency: 'C$',
+      itemName: "",
+      category: "",
+      currency: "C$",
       quantity: null,
-      price: null
+      price: null,
     },
     onSubmit: (values) => submitItem(values),
-    validationSchema: validationItem
-  })
+    validationSchema: validationItem,
+  });
 
   return { formik };
 };

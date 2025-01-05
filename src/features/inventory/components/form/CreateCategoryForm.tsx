@@ -1,10 +1,10 @@
 import { Field, FormikProvider, Form } from "formik";
-import useItemForm from "../../hooks/useItemForm";
 import { Button } from "@/components/ui/button";
 import { Tags } from "lucide-react";
+import { useCategoryForm } from "../../hooks/useCategoryForm";
 
 const CreateCategoryForm = () => {
-  const { formik } = useItemForm();
+  const { formik } = useCategoryForm();
 
   return (
     <FormikProvider value={formik}>

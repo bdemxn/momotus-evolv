@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dialog";
 
 import { Plus } from "lucide-react";
-import CreateItemForm from "./CreateItemForm";
+import CreateItemForm from "../form/CreateItemForm";
 
 const CreateItemBtn = () => {
   return (

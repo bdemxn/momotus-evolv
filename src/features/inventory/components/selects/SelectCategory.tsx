@@ -5,7 +5,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { setCategories } from "../services/setCategories";
+import { setCategories } from "../../services/setCategories";
 import { useFormikContext } from "formik";
 
 const SelectCategory = () => {

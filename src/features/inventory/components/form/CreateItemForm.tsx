@@ -1,10 +1,10 @@
 import { Field, FormikProvider, Form } from "formik";
-import useItemForm from "../hooks/useItemForm";
-import { createItemFormInputs } from "./data/createItem.data";
+import useItemForm from "../../hooks/useItemForm";
+import { createItemFormInputs } from "../data/createItem.data";
 import { Button } from "@/components/ui/button";
 import { PackagePlus } from "lucide-react";
-import SelectCategory from "./SelectCategory";
-import SelectCurrency from "./SelectCurrency";
+import SelectCategory from "../selects/SelectCategory";
+import SelectCurrency from "../selects/SelectCurrency";
 
 const CreateItemForm = () => {
   const { formik } = useItemForm();

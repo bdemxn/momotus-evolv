@@ -3,17 +3,17 @@ import * as yup from "yup";
 export const validationItem = yup.object({
   itemName: yup
     .string()
-    .required(),
+    .required("Nombre del producto es requerido"),
   category: yup
     .string()
-    .required(),
+    .required("Debe seleccionar una categoría"),
   currency: yup
     .string()
-    .required(),
+    .required("Debe seleccionar una moneda"),
   quantity: yup
     .number()
-    .required(),
+    .required("Digíte una cantidad válida"),
   price: yup
     .number()
-    .required()
+    .required("Digíte un precio válido")
 });

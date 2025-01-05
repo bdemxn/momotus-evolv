@@ -15,12 +15,12 @@ const CreateItemBtn = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button>
+        <Button className="font-inter">
           <Plus /> Añadir artículo
         </Button>
       </DialogTrigger>
 
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] font-inter">
         <DialogHeader>
           <DialogTitle>Crear artículo</DialogTitle>
           <DialogDescription>

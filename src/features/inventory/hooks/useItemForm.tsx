@@ -8,8 +8,8 @@ const useItemForm = () => {
       itemName: '',
       category: '',
       currency: 'C$',
-      quantity: '',
-      price: ''
+      quantity: null,
+      price: null
     },
     onSubmit: (values) => submitItem(values),
     validationSchema: validationItem

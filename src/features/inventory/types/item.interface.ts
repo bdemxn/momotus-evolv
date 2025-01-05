@@ -2,6 +2,6 @@ export interface Item {
   itemName: string;
   category: string;
   currency: string;
-  quantity: number;
-  price: number;
+  quantity: number | null;
+  price: number | null;
 }

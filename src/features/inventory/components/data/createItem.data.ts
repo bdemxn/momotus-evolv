@@ -7,18 +7,12 @@ export const createItemFormInputs = [
   },
   {
     id: 2,
-    itemName: "category",
-    name: "category",
-    placeholder: "Categoría"
-  },
-  {
-    id: 3,
     itemName: "quantity",
     name: "quantity",
     placeholder: "Cantidad"
   },
   {
-    id: 4,
+    id: 3,
     itemName: "price",
     name: "price",
     placeholder: "Precio"

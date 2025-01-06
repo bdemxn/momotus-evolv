@@ -49,7 +49,7 @@ export function DataTable<TData, TValue>({
 
   return (
     <>
-      <div className="flex items-center py-4">
+      <div className="flex items-center py-4 w-screen">
         <Input
           placeholder="Busca por nombre de producto"
           value={
@@ -58,7 +58,7 @@ export function DataTable<TData, TValue>({
           onChange={(event) =>
             table.getColumn("itemName")?.setFilterValue(event.target.value)
           }
-          className="max-w-sm"
+          className="sm:max-w-sm w-[20rem]"
         />
       </div>
       <div className="rounded-md border">

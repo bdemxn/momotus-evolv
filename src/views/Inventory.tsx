@@ -1,6 +1,5 @@
 import ButtonsGroup from "@/features/inventory/components/buttons/ButtonsGroup";
-import { columns } from "@/features/inventory/components/tables/columns";
-import { DataTable } from "@/features/inventory/components/tables/data-table";
+import ResponsiveTable from "@/features/inventory/components/tables/responsive";
 import { InventoryTable } from "@/features/inventory/types/table.type";
 import { useEffect, useState } from "react";
 
@@ -86,6 +85,46 @@ async function getData(): Promise<InventoryTable[]> {
       price: 149,
       quantity: 70,
     },
+    {
+      id: 6,
+      itemName: "ASUS ROG Strix B550-F",
+      category: "Tarjetas Madre",
+      currency: "$",
+      price: 180,
+      quantity: 50,
+    },
+    {
+      id: 7,
+      itemName: "Cooler Master Hyper 212 Black Edition",
+      category: "Refrigeración",
+      currency: "$",
+      price: 49,
+      quantity: 120,
+    },
+    {
+      id: 8,
+      itemName: "Logitech MX Master 3S",
+      category: "Periféricos",
+      currency: "$",
+      price: 99,
+      quantity: 90,
+    },
+    {
+      id: 9,
+      itemName: "Dell Ultrasharp U2723QE",
+      category: "Monitores",
+      currency: "$",
+      price: 649,
+      quantity: 40,
+    },
+    {
+      id: 10,
+      itemName: "Be Quiet! Straight Power 11 750W",
+      category: "Fuentes de Poder",
+      currency: "$",
+      price: 149,
+      quantity: 70,
+    },
   ];
 }
 
@@ -102,14 +141,16 @@ const Inventory = () => {
   }, []);
 
   return (
-    <div>
-      <p className="font-semibold text-xl">Inventario</p>
-      <br />
+    <div className="h-full">
+      <div className="top-0 backdrop-blur-sm z-50 sticky p-3">
+        <p className="sm:font-semibold sm:text-xl font-bold text-2xl mb-5">
+          Inventario
+        </p>
 
-      <ButtonsGroup />
-      <div className="container mx-auto py-10">
-        <DataTable columns={columns} data={data} />
+        <ButtonsGroup />
       </div>
+
+      <ResponsiveTable data={data}/>
     </div>
   );
 };

@@ -6,14 +6,14 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 const AppLayout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <SidebarProvider>
-      <section className="sm:grid sm:grid-cols-7 font-inter">
+      <section className="flex h-screen font-inter">
         <AppSidebar />
 
-        <main className="sm:col-span-6">
+        <main>
           <SidebarTrigger />
-          <div className="p-3">{children}</div>
-        </main>
 
+          <div className="w-full">{children}</div>
+        </main>
       </section>
     </SidebarProvider>
   );

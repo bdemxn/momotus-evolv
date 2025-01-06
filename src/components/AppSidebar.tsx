@@ -21,7 +21,7 @@ import { ChevronUp, LogOut, User2 } from "lucide-react";
 
 export const AppSidebar = () => {
   return (
-    <Sidebar>
+    <Sidebar className="h-full">
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Momotus Evolv</SidebarGroupLabel>

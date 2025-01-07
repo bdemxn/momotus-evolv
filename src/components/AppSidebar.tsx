@@ -17,11 +17,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import { ChevronUp, LogOut, User2 } from "lucide-react";
+import { ChevronUp, LogOut, SunMoon, User2 } from "lucide-react";
 
 export const AppSidebar = () => {
   return (
-    <Sidebar className="h-full">
+    <Sidebar className="h-full z-50">
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Momotus Evolv</SidebarGroupLabel>
@@ -57,6 +57,10 @@ export const AppSidebar = () => {
                 className="w-[--radix-popper-anchor-width]"
               >
                 <DropdownMenuItem>
+                  <span className="font-inter">Cambiar tema</span>
+                  <SunMoon className="ml-auto"/>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
                   <span className="font-inter">Cuenta Momotus</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
@@ -64,7 +68,7 @@ export const AppSidebar = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <span className="font-inter text-red-600">Cerrar Sesión</span>
-                  <LogOut className="ml-auto text-red-600"/>
+                  <LogOut className="ml-auto text-red-600" />
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

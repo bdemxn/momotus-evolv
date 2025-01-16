@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { useMediaQuery } from "@uidotdev/usehooks";
 import {
   Dialog,
   DialogHeader,
@@ -8,6 +9,9 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
+import { Plus } from "lucide-react";
+import CreateItemForm from "../form/create-item-form";
+import { useState } from "react";
 import {
   Drawer,
   DrawerContent,
@@ -17,12 +21,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 
-import { Tag } from "lucide-react";
-import CreateCategoryForm from "../form/CreateCategoryForm";
-import { useState } from "react";
-import { useMediaQuery } from "@uidotdev/usehooks";
-
-const CreateCategoryBtn = () => {
+const CreateItemBtn = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
@@ -31,19 +30,19 @@ const CreateCategoryBtn = () => {
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild>
           <Button className="font-inter">
-            <Tag /> Añadir Categoría
+            <Plus /> Añadir artículo
           </Button>
         </DialogTrigger>
 
         <DialogContent className="sm:max-w-[425px] font-inter">
           <DialogHeader>
-            <DialogTitle>Añade una categoría</DialogTitle>
+            <DialogTitle>Crear artículo</DialogTitle>
             <DialogDescription>
-              Así podrás tener organizado tu inventario
+              Puedes añadir un artículo a tu inventario
             </DialogDescription>
           </DialogHeader>
 
-          <CreateCategoryForm />
+          <CreateItemForm />
         </DialogContent>
       </Dialog>
     );
@@ -53,24 +52,24 @@ const CreateCategoryBtn = () => {
     <Drawer open={isOpen} onOpenChange={setIsOpen}>
       <DrawerTrigger asChild>
         <Button className="font-inter">
-          <Tag /> Añadir Categoría
+          <Plus /> Añadir artículo
         </Button>
       </DrawerTrigger>
 
       <DrawerContent>
         <DrawerHeader>
-          <DrawerTitle>Añade una categoría</DrawerTitle>
+          <DrawerTitle>Crear artículos</DrawerTitle>
           <DrawerDescription>
-            Así podrás tener organizado tu inventario
+            Puedes añadir un artículo a tu inventario
           </DrawerDescription>
         </DrawerHeader>
 
         <div className="m-3">
-          <CreateCategoryForm />
+          <CreateItemForm />
         </div>
       </DrawerContent>
     </Drawer>
   );
 };
 
-export default CreateCategoryBtn;
+export default CreateItemBtn;

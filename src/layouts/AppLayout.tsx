@@ -1,6 +1,6 @@
 import React from "react";
 import { LayoutProps } from "../types/layout.props";
-import { AppSidebar } from "../components/AppSidebar";
+import { AppSidebar } from "../components/app-sidebar";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 const AppLayout: React.FC<LayoutProps> = ({ children }) => {

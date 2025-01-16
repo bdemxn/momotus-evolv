@@ -1,4 +1,4 @@
-import ButtonsGroup from "@/features/inventory/components/buttons/ButtonsGroup";
+import ButtonsGroup from "@/features/inventory/components/buttons/button-group";
 import ResponsiveTable from "@/features/inventory/components/tables/responsive";
 import { InventoryTable } from "@/features/inventory/types/table.type";
 import { useEffect, useState } from "react";

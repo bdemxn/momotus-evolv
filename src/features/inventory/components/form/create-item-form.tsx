@@ -3,8 +3,8 @@ import useItemForm from "../../hooks/useItemForm";
 import { createItemFormInputs } from "../data/createItem.data";
 import { Button } from "@/components/ui/button";
 import { PackagePlus } from "lucide-react";
-import SelectCategory from "../selects/SelectCategory";
-import SelectCurrency from "../selects/SelectCurrency";
+import SelectCategory from "../selects/select-category";
+import SelectCurrency from "../selects/select-currency";
 
 const CreateItemForm = () => {
   const { formik } = useItemForm();

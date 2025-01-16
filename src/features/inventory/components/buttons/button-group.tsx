@@ -1,5 +1,5 @@
-import CreateCategoryBtn from "./CreateCategoryBtn";
-import CreateItemBtn from "./CreateItemBtn";
+import CreateCategoryBtn from "./create-category-btn";
+import CreateItemBtn from "./create-item-btn";
 
 const ButtonsGroup = () => {
   return (

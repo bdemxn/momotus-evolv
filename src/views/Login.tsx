@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import LoginForm from "@/features/auth/components/LoginForm";
+import LoginForm from "@/features/auth/components/login-form";
 import { NavLink } from "react-router";
 
 const Login = () => {

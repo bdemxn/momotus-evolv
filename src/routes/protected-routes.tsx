@@ -1,4 +1,4 @@
-import AppLayout from "@/layouts/AppLayout";
+import AppLayout from "@/layouts/app-layout";
 import { Navigate, Outlet } from "react-router";
 
 const ProtectedRoutes = () => {

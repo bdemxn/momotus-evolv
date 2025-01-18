@@ -13,7 +13,7 @@ const CreateItemForm = () => {
     <FormikProvider value={formik}>
       <br />
 
-      <Form className="flex flex-col gap-y-2 font-inter">
+      <Form className="flex flex-col gap-y-2 font-inter dark:text-white">
 
         <SelectCategory />
         {createItemFormInputs.map(({ id, itemName, name, placeholder }) => (

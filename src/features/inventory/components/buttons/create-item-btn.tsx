@@ -34,9 +34,9 @@ const CreateItemBtn = () => {
           </Button>
         </DialogTrigger>
 
-        <DialogContent className="sm:max-w-[425px] font-inter">
+        <DialogContent className="sm:max-w-[425px] font-inter dark:text-white">
           <DialogHeader>
-            <DialogTitle>Crear artículo</DialogTitle>
+            <DialogTitle className="dark:text-white">Crear artículo</DialogTitle>
             <DialogDescription>
               Puedes añadir un artículo a tu inventario
             </DialogDescription>

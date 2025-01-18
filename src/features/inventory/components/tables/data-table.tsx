@@ -58,14 +58,14 @@ export function DataTable<TData, TValue>({
           onChange={(event) =>
             table.getColumn("itemName")?.setFilterValue(event.target.value)
           }
-          className="sm:max-w-sm w-[20rem]"
+          className="sm:max-w-sm w-[20rem] dark:text-white"
         />
       </div>
-      <div className="rounded-md border">
+      <div className="rounded-md border dark:border-white/20 dark:text-[#A8A8A8]">
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
-              <TableRow key={headerGroup.id}>
+              <TableRow className="dark:border-white/20" key={headerGroup.id}>
                 {headerGroup.headers.map((header) => {
                   return (
                     <TableHead key={header.id}>
@@ -85,6 +85,7 @@ export function DataTable<TData, TValue>({
             {table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (
                 <TableRow
+                  className="dark:border-white/20"
                   key={row.id}
                   data-state={row.getIsSelected() && "selected"}
                 >

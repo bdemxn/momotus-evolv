@@ -35,7 +35,7 @@ const CreateCategoryBtn = () => {
           </Button>
         </DialogTrigger>
 
-        <DialogContent className="sm:max-w-[425px] font-inter">
+        <DialogContent className="sm:max-w-[425px] font-inter dark:text-white">
           <DialogHeader>
             <DialogTitle>Añade una categoría</DialogTitle>
             <DialogDescription>
@@ -58,7 +58,7 @@ const CreateCategoryBtn = () => {
       </DrawerTrigger>
 
       <DrawerContent>
-        <DrawerHeader>
+        <DrawerHeader className="dark:text-white">
           <DrawerTitle>Añade una categoría</DrawerTitle>
           <DrawerDescription>
             Así podrás tener organizado tu inventario

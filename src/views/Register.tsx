@@ -21,7 +21,7 @@ const Register = () => {
         <CardContent>
 
           <RegisterForm />
-          <hr className="my-4" />
+          <hr className="my-4 dark:opacity-20" />
           <NavLink
             to="/login"
             className="text-xs font-semibold flex justify-end gap-x-1"

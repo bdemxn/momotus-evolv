@@ -5,7 +5,7 @@ import Sales from "../views/Sales";
 import Billing from "../views/Billing";
 import Login from "@/views/Login";
 import Register from "@/views/Register";
-import ProtectedRoutes from "./ProtectedRoutes";
+import ProtectedRoutes from "./protected-routes";
 
 const AppRoutes = () => {
   return (

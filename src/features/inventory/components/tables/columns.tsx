@@ -1,5 +1,4 @@
 import { ColumnDef } from "@tanstack/react-table";
-import { InventoryTable } from "../../types/table.type";
 
 import { MoreHorizontal, Pencil, Trash2, ArrowUpDown } from "lucide-react";
 
@@ -12,8 +11,9 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Item } from "../../types/item.interface";
 
-export const columns: ColumnDef<InventoryTable>[] = [
+export const columns: ColumnDef<Item>[] = [
   {
     accessorKey: "id",
     header: ({ column }) => {
@@ -29,7 +29,7 @@ export const columns: ColumnDef<InventoryTable>[] = [
     },
   },
   {
-    accessorKey: "itemName",
+    accessorKey: "item_name",
     header: ({ column }) => {
       return (
         <Button

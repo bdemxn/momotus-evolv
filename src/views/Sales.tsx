@@ -18,7 +18,7 @@ const Sales = () => {
       <div className="dark:text-white container h-[500px] md:h-[750px] mx-auto p-3 w-screen grid md:grid-cols-2 grid-cols-1">
         <ScrollArea>
           {mockData.map(
-            ({ id, category, currency, itemName, price, quantity }) => (
+            ({ id, category, currency, item_name: itemName, price, quantity }) => (
               <ProductCard
                 key={id}
                 id={id}

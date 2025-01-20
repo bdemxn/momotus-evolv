@@ -5,10 +5,10 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { setCategories } from "../../services/setCategories";
 import { useFormikContext } from "formik";
+import { CategoryListInterface } from "../../types/category.interface";
 
-const SelectCategory = () => {
+const SelectCategory = ({ categoryList }: CategoryListInterface) => {
   const { setFieldValue } = useFormikContext();
 
   return (
@@ -17,9 +17,9 @@ const SelectCategory = () => {
         <SelectValue placeholder="Categoría" />
       </SelectTrigger>
       <SelectContent>
-        {setCategories.map(({ category, id }) => (
-          <SelectItem value={category} key={id} className="font-inter">
-            {category}
+        {categoryList?.map(({ category_name, id }) => (
+          <SelectItem value={category_name} key={id} className="font-inter">
+            {category_name}
           </SelectItem>
         ))}
       </SelectContent>

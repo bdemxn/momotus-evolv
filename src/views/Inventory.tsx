@@ -1,27 +1,10 @@
-import { mockData } from "@/data/mock-data";
 import ButtonsGroup from "@/features/inventory/components/buttons/button-group";
 import ResponsiveTable from "@/features/inventory/components/tables/responsive";
-import { InventoryTable } from "@/features/inventory/types/table.type";
-import { useEffect, useState } from "react";
-
-async function getData(): Promise<InventoryTable[]> {
-  return mockData;
-}
+import { InventoryProvider } from "@/features/inventory/store/inventory-provider";
 
 const Inventory = () => {
-  const [data, setData] = useState<InventoryTable[]>([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const result = await getData();
-      setData(result);
-    };
-
-    fetchData();
-  }, []);
-
   return (
-    <div>
+    <InventoryProvider>
       <div className="top-0 backdrop-blur-sm z-40 sticky p-3">
         <p className="sm:font-semibold sm:text-xl font-bold text-2xl mb-5 dark:text-white">
           Inventario
@@ -30,8 +13,8 @@ const Inventory = () => {
         <ButtonsGroup />
       </div>
 
-      <ResponsiveTable data={data} />
-    </div>
+      <ResponsiveTable />
+    </InventoryProvider>
   );
 };
 

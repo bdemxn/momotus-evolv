@@ -1,6 +1,6 @@
 export type InventoryTable = {
-  id: number;
-  itemName: string;
+  id: string;
+  item_name: string;
   category: string;
   currency: string;
   price: number;

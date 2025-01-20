@@ -5,7 +5,7 @@ import { validationItem } from "../services/validationItem";
 const useItemForm = () => {
   const formik = useFormik({
     initialValues: {
-      itemName: "",
+      item_name: "",
       category: "",
       currency: "C$",
       quantity: null,

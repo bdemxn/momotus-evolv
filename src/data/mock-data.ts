@@ -1,6 +1,6 @@
 type InventoryMockData = {
   id: number;
-  itemName: string;
+  item_name: string;
   category: string;
   currency: string;
   price: number;
@@ -10,7 +10,7 @@ type InventoryMockData = {
 export const mockData: Array<InventoryMockData> = [
   {
     id: 1,
-    itemName: "AMD Ryzen 5 3600X",
+    item_name: "AMD Ryzen 5 3600X",
     category: "Electrónica",
     currency: "$",
     price: 190,
@@ -18,7 +18,7 @@ export const mockData: Array<InventoryMockData> = [
   },
   {
     id: 2,
-    itemName: "Intel Core i7-12700K",
+    item_name: "Intel Core i7-12700K",
     category: "Electrónica",
     currency: "$",
     price: 320,
@@ -26,7 +26,7 @@ export const mockData: Array<InventoryMockData> = [
   },
   {
     id: 3,
-    itemName: "NVIDIA GeForce RTX 3060",
+    item_name: "NVIDIA GeForce RTX 3060",
     category: "Electrónica",
     currency: "$",
     price: 399,
@@ -34,7 +34,7 @@ export const mockData: Array<InventoryMockData> = [
   },
   {
     id: 4,
-    itemName: "Samsung 970 EVO Plus 1TB",
+    item_name: "Samsung 970 EVO Plus 1TB",
     category: "Almacenamiento",
     currency: "$",
     price: 89,
@@ -42,7 +42,7 @@ export const mockData: Array<InventoryMockData> = [
   },
   {
     id: 5,
-    itemName: "Corsair Vengeance LPX 16GB",
+    item_name: "Corsair Vengeance LPX 16GB",
     category: "Memorias RAM",
     currency: "$",
     price: 79,
@@ -50,7 +50,7 @@ export const mockData: Array<InventoryMockData> = [
   },
   {
     id: 6,
-    itemName: "ASUS ROG Strix B550-F",
+    item_name: "ASUS ROG Strix B550-F",
     category: "Tarjetas Madre",
     currency: "$",
     price: 180,
@@ -58,7 +58,7 @@ export const mockData: Array<InventoryMockData> = [
   },
   {
     id: 7,
-    itemName: "Cooler Master Hyper 212 Black Edition",
+    item_name: "Cooler Master Hyper 212 Black Edition",
     category: "Refrigeración",
     currency: "$",
     price: 49,
@@ -66,7 +66,7 @@ export const mockData: Array<InventoryMockData> = [
   },
   {
     id: 8,
-    itemName: "Logitech MX Master 3S",
+    item_name: "Logitech MX Master 3S",
     category: "Periféricos",
     currency: "$",
     price: 99,
@@ -74,7 +74,7 @@ export const mockData: Array<InventoryMockData> = [
   },
   {
     id: 9,
-    itemName: "Dell Ultrasharp U2723QE",
+    item_name: "Dell Ultrasharp U2723QE",
     category: "Monitores",
     currency: "$",
     price: 649,
@@ -82,7 +82,7 @@ export const mockData: Array<InventoryMockData> = [
   },
   {
     id: 101,
-    itemName: "Be Quiet! Straight Power 11 750W",
+    item_name: "Be Quiet! Straight Power 11 750W",
     category: "Fuentes de Poder",
     currency: "$",
     price: 149,
@@ -90,7 +90,7 @@ export const mockData: Array<InventoryMockData> = [
   },
   {
     id: 6,
-    itemName: "ASUS ROG Strix B550-F",
+    item_name: "ASUS ROG Strix B550-F",
     category: "Tarjetas Madre",
     currency: "$",
     price: 180,
@@ -98,7 +98,7 @@ export const mockData: Array<InventoryMockData> = [
   },
   {
     id: 7,
-    itemName: "Cooler Master Hyper 212 Black Edition",
+    item_name: "Cooler Master Hyper 212 Black Edition",
     category: "Refrigeración",
     currency: "$",
     price: 49,
@@ -106,7 +106,7 @@ export const mockData: Array<InventoryMockData> = [
   },
   {
     id: 8,
-    itemName: "Logitech MX Master 3S",
+    item_name: "Logitech MX Master 3S",
     category: "Periféricos",
     currency: "$",
     price: 99,
@@ -114,7 +114,7 @@ export const mockData: Array<InventoryMockData> = [
   },
   {
     id: 9,
-    itemName: "Dell Ultrasharp U2723QE",
+    item_name: "Dell Ultrasharp U2723QE",
     category: "Monitores",
     currency: "$",
     price: 649,
@@ -122,7 +122,7 @@ export const mockData: Array<InventoryMockData> = [
   },
   {
     id: 10,
-    itemName: "Be Quiet! Straight Power 11 750W",
+    item_name: "Be Quiet! Straight Power 11 750W",
     category: "Fuentes de Poder",
     currency: "$",
     price: 149,

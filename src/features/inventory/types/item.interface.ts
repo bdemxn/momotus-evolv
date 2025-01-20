@@ -1,7 +1,11 @@
 export interface Item {
-  itemName: string;
+  item_name: string;
   category: string;
   currency: string;
   quantity: number | null;
   price: number | null;
+}
+
+export interface InventoryList {
+  itemList: Item[]
 }

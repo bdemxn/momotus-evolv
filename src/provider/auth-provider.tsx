@@ -11,7 +11,6 @@ export const UserAuthProvider: React.FC<LayoutProps> = ({ children }) => {
 
   useEffect(() => {
     const { data } = supabase.auth.onAuthStateChange((_event, session) => {
-      console.log("Session onAuthStateChange: ", session);
       setSession(session);
       setUser(session?.user || null);
       setIsLoading(false);

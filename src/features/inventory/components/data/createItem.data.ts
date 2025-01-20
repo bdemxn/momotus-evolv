@@ -1,19 +1,19 @@
 export const createItemFormInputs = [
   {
     id: 1,
-    itemName: "itemName",
-    name: "itemName",
+    item_name: "item_name",
+    name: "item_name",
     placeholder: "Nombre del producto"
   },
   {
     id: 2,
-    itemName: "quantity",
+    item_name: "quantity",
     name: "quantity",
     placeholder: "Cantidad"
   },
   {
     id: 3,
-    itemName: "price",
+    item_name: "price",
     name: "price",
     placeholder: "Precio"
   }

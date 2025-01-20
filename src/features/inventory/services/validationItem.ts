@@ -1,7 +1,7 @@
 import * as yup from "yup";
 
 export const validationItem = yup.object({
-  itemName: yup
+  item_name: yup
     .string()
     .required("Nombre del producto es requerido"),
   category: yup

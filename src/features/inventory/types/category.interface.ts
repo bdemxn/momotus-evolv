@@ -1,3 +1,8 @@
 export interface Category {
-  category: string;
+  category_name: string;
+  id: string;
+}
+
+export type CategoryListInterface = {
+  categoryList: Array<Category> | null
 }

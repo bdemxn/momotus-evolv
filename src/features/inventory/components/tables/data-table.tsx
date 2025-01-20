@@ -53,10 +53,10 @@ export function DataTable<TData, TValue>({
         <Input
           placeholder="Busca por nombre de producto"
           value={
-            (table.getColumn("itemName")?.getFilterValue() as string) ?? ""
+            (table.getColumn("item_name")?.getFilterValue() as string) ?? ""
           }
           onChange={(event) =>
-            table.getColumn("itemName")?.setFilterValue(event.target.value)
+            table.getColumn("item_name")?.setFilterValue(event.target.value)
           }
           className="sm:max-w-sm w-[20rem] dark:text-white"
         />

@@ -9,8 +9,9 @@ const ResponsiveTable = ({ data }: any) => {
 
   if (isDesktop) {
     return (
-      <div className="container mx-auto p-3 overflow-y-auto overflow-x-hidden">
+      <div className="container mx-auto w-full h-[750px] p-3 overflow-y-auto overflow-x-hidden">
         <DataTable data={data} columns={columns} />
+        
       </div>
     );
   }

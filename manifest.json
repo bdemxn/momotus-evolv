@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "version": "1.1",
+  "name": "Momotus Evolv Lite",
+  "icons": {
+    "src": "public/evolv.png",
+    "type": "img/png",
+    "sizes": "192x192"
+  },
+  "start_url": ".",
+  "display": "standalone"
+}

@@ -4,12 +4,10 @@ import { AppSidebar } from "../components/app-sidebar";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { ThemeProvider } from "@/provider/theme-provider";
 import { Rightbar } from "@/components/right-bar";
-import { Toaster } from "sonner";
 
 const AppLayout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <ThemeProvider>
-      <Toaster />
       <SidebarProvider>
         <section className="flex font-inter">
           <AppSidebar />

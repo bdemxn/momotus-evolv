@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "lib": ["WebWorker"],
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "baseUrl": ".",

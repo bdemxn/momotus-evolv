@@ -18,8 +18,12 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { ChevronUp, LogOut, User2 } from "lucide-react";
+import { useAuth } from "@/hooks/useAuth";
 
 export const AppSidebar = () => {
+  const { signOut, user } = useAuth();
+  const fullName = `${user?.user_metadata?.firstname} ${user?.user_metadata?.lastname}`;
+
   return (
     <Sidebar className="h-full z-50 font-semibold dark:border-[#181818]">
       <SidebarContent>
@@ -50,7 +54,7 @@ export const AppSidebar = () => {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <SidebarMenuButton>
-                  <User2 /> Kevin Bonilla
+                  <User2 /> {fullName}
                   <ChevronUp className="ml-auto" />
                 </SidebarMenuButton>
               </DropdownMenuTrigger>
@@ -64,11 +68,9 @@ export const AppSidebar = () => {
                 <DropdownMenuItem>
                   <span className="font-inter">Soporte</span>
                 </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <NavLink to="login" className="font-inter text-red-600 flex w-full justify-around items-center">
-                    Cerrar Sesión
-                    <LogOut className="ml-auto text-red-600 w-4" />
-                  </NavLink>
+                <DropdownMenuItem onClick={signOut}>
+                  <span className="font-inter text-red-600">Cerrar Sesión</span>
+                  <LogOut className="ml-auto text-red-600 w-4" />
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

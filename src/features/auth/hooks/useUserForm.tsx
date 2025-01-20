@@ -1,18 +1,20 @@
 import { useFormik } from "formik";
-import { submitUser } from "../services/submitUser";
 import { validationUserLogin } from "../services/validationUserLogin";
+import useUserAuth from "./useUserAuth";
 
 const useUserForm = () => {
+  const { handleLogin, isLoading: loginLoading } = useUserAuth();
+
   const formik = useFormik({
     initialValues: {
-      username: "",
+      email: "",
       password: "",
     },
-    onSubmit: (values) => submitUser(values),
-    validationSchema: validationUserLogin
+    onSubmit: (values) => handleLogin(values.email, values.password),
+    validationSchema: validationUserLogin,
   });
 
-  return { formik };
+  return { formik, loginLoading };
 };
 
 export default useUserForm;

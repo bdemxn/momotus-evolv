@@ -10,7 +10,7 @@ import { NavLink } from "react-router";
 
 const Login = () => {
   return (
-    <div className="md:h-screen md:w-[500px] mx-auto font-inter">
+    <div className="md:w-[500px] mx-auto font-inter">
       <Card className="mt-[30%]">
         <CardHeader>
           <CardTitle className="text-2xl">Bienvenido</CardTitle>

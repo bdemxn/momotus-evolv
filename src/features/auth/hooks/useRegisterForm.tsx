@@ -1,18 +1,20 @@
 import { useFormik } from "formik";
-import { registerUser } from "../services/registerUser";
+import useUserAuth from "./useUserAuth";
 
 const useRegisterForm = () => {
+  const { handleRegister, isLoading: registerLoading } = useUserAuth();
+
   const formik = useFormik({
     initialValues: {
-      username: "",
+      email: "",
       password: "",
       firstname: "",
-      lastname: ""
+      lastname: "",
     },
-    onSubmit: (values) => registerUser(values),
+    onSubmit: (values) => handleRegister(values.email, values.password, values.firstname, values.lastname),
   });
 
-  return { formik };
+  return { formik, registerLoading };
 };
 
 export default useRegisterForm;

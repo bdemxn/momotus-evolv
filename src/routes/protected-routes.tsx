@@ -1,15 +1,16 @@
-import AppLayout from "@/layouts/app-layout";
+import { useAuth } from "@/hooks/useAuth";
 import { Navigate, Outlet } from "react-router";
+import AppLayout from "@/layouts/app-layout";
 
 const ProtectedRoutes = () => {
-  const isAuth = true;
+  const { user } = useAuth();
 
-  return isAuth ? (
+  if (!user) return <Navigate to="/login" replace />;
+
+  return (
     <AppLayout>
       <Outlet />
     </AppLayout>
-  ) : (
-    <Navigate to="/login" />
   );
 };
 

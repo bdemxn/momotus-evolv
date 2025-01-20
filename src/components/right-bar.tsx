@@ -12,7 +12,7 @@ export const Rightbar = () => {
   const { setTheme } = useTheme();
 
   return (
-    <div className="absolute right-0 mt-2 mr-10 dark:text-white z-50">
+    <div className="absolute right-0 mt-2 mr-5 md:mr-10 dark:text-white z-50">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline" size="icon">

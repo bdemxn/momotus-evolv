@@ -1,5 +1,5 @@
 export type UserLogin = {
-  username: string;
+  email: string;
   password: string;
 }
 
@@ -8,4 +8,5 @@ export type UserRegistration = {
   password: string;
   firstname: string;
   lastname: string;
+  email: string;
 }

@@ -11,10 +11,11 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route element={<ProtectedRoutes />}>
-        <Route path="/" element={<Home />} />
+        <Route index path="/" element={<Home />} />
         <Route path="inventory" element={<Inventory />} />
         <Route path="sales" element={<Sales />} />
         <Route path="billing" element={<Billing />} />
+        <Route path="*" element={<Home />} />
       </Route>
 
       <Route path="login" element={<Login />} />
